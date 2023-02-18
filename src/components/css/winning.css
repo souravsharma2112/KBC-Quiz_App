@@ -1,0 +1,118 @@
+.winning_container{
+    background: url("../assets/bg.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    z-index: 99;
+}
+.wmenuBtn{
+    border-radius: 50%;
+    border: 2px solid #daa520;
+    background: transparent;
+    outline: none;
+}
+.winning_box{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 350px 1fr;
+}
+.win_left_box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.win_right_box{
+    border: 2px solid #0000ff39;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #01014194;
+}
+.win_ab_img{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: flex-end;
+}
+#userName{
+    text-transform: uppercase;
+}
+#dummy{
+    width: 50px;
+    height: 50px;
+    border: 2px solid red;
+}
+.win_ab_img img{
+    width: 100%;
+}
+.win_result{
+    font-size: 2rem;
+    font-weight: 800;
+    color: rgb(1, 2, 44);
+    color: rgb(255, 226, 61);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 70%;
+    height: 60%;
+    filter: invert(7%);
+    /* background-color: #f3d73c; */
+    background: url("../assets/firebg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 12px;
+}
+.win_result_img img{
+    width: 60px;
+    position: absolute;
+    top: 5%;
+    right: 4%;
+}
+.win_result_img2 img{
+    width: 120px;
+    position: absolute;
+    bottom: 5%;
+    left: 2%;
+    z-index: -1;
+}
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 480px) and (max-width: 767px) {
+    .winning_box{
+        grid-template-columns: 170px 1fr;
+    }
+    .win_result{
+        font-size: 1rem;
+        width: 80%;
+    }
+    .win_result_img img{
+        width: 40px;
+    }
+    .win_result_img2 img{
+        width: 80px;
+    }
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px){
+    .winning_box{
+        grid-template-columns: 250px 1fr;
+    }
+    .win_result{
+        font-size: 1.4rem;
+        width: 80%;
+    }
+    .win_result_img img{
+        width: 50px;
+    }
+    .win_result_img2 img{
+        width: 100px;
+    }
+}
